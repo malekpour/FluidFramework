@@ -237,12 +237,12 @@ build time.
 **Input**
 
 ```
-{{% include file="content/reference/advanced/images/example.ditaa" safeHTML=true %}}
+{{% include file="content/docs/advanced/images/example.ditaa" safeHTML=true %}}
 ```
 
 **Output**
 
-![An example ditaa diagram that has been converted to a PNG image](/reference/advanced/images/example.png)
+![An example ditaa diagram that has been converted to a PNG image](/docs/advanced/images/example.png)
 
 
 [Read more about ditaa here.](https://github.com/stathissideris/ditaa) Note that we are using

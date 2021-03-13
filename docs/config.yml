@@ -27,8 +27,8 @@ menu:
   - name: "Recipes"
     url: "/docs/recipes/"
     weight: -80
-  - name: "API"
-    url: "/reference/"
+  - name: "Docs"
+    url: "/apis/"
     weight: -70
   - name: "Community"
     url: "/community/"
@@ -41,6 +41,12 @@ menu:
   - identifier: "get-started"
     name: "Get Started"
     weight: -500
+  - identifier: "concepts"
+    name: "Concepts"
+    weight: -400
+  - identifier: "advanced"
+    name: "Advanced concepts"
+    weight: -300
   - identifier: "recipes"
     name: "Recipes"
     weight: -200
@@ -53,20 +59,11 @@ menu:
     url: "/docs/Glossary/"
     weight: -90
 
-  # this menu supplements one generated in the apiNav partial
-  reference:
-  - identifier: "concepts"
-    name: "Concepts"
-    weight: -400
-  - identifier: "advanced"
-    name: "Advanced"
-    weight: -300
-
 markup:
   goldmark:
     renderer:
       autoHeadingIDType: "github"
-      # mark unsafe html as true since api-documenter uses html snippets in markdown
+      # mark unsafe html as true since api-documenter uses html snipets.
       unsafe: true
       extensions:
         definitionList: true
