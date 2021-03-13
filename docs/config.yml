@@ -7,7 +7,7 @@ titleCaseStyle: "Chicago"
 
 permalinks:
   page: "/:slug"
-  post: "/:year/:month/:day/:title"
+  post: "/:year/:month/:title"
 
 params:
   appInsightKey: ""  # This is provided by the build system as an env variable
@@ -23,11 +23,14 @@ menu:
   main:
   - name: "Getting started"
     url: "/docs/get-started/quick-start/"
-    weight: -90
+    weight: -100
   - name: "Recipes"
     url: "/docs/recipes/"
-    weight: -80
+    weight: -90
   - name: "Docs"
+    url: "/reference"
+    weight: -80
+  - name: "API Reference"
     url: "/apis/"
     weight: -70
   - name: "Community"
@@ -41,12 +44,6 @@ menu:
   - identifier: "get-started"
     name: "Get Started"
     weight: -500
-  - identifier: "concepts"
-    name: "Concepts"
-    weight: -400
-  - identifier: "advanced"
-    name: "Advanced concepts"
-    weight: -300
   - identifier: "recipes"
     name: "Recipes"
     weight: -200
@@ -56,8 +53,17 @@ menu:
     weight: -100
   - identifier: "glossary"
     name: "Glossary"
-    url: "/docs/Glossary/"
+    url: "/docs/glossary/"
     weight: -90
+
+  reference:
+  - identifier: "concepts"
+    name: "Concepts"
+    weight: -400
+  - identifier: "advanced"
+    name: "Advanced"
+    weight: -300
+
 
 markup:
   goldmark:
